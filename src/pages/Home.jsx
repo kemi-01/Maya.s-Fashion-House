@@ -32,17 +32,17 @@ export default function Home() {
       {/* HERO */}
       <section className="relative min-h-screen">
         <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt="Maya's Fashion House fashion campaign"
-            className="h-full w-full object-cover"
-          />
+  <img
+    src={heroImage}
+    alt="Maya's Fashion House fashion campaign"
+   className="h-full w-full object-contain object-top sm:h-full sm:w-full sm:object-cover"
+  />
 
-          <div className="absolute inset-0 bg-black/35" />
-        </div>
+  <div className="absolute inset-0 bg-black/35" />
+</div>
 
         <div className="relative z-10 flex min-h-screen items-end px-5 pb-12 pt-32 sm:px-8 lg:px-12 lg:pb-16">
-          <div className="mx-auto w-full max-w-[1600px]">
+          <div className="mx-auto w-full max-w-[1600px] -mt-10">
 
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function Home() {
               className="mb-6 text-[10px] uppercase tracking-[0.3em] text-white/70"
             >
               Maya's Fashion House
-            </motion.p>
+            </motion.p> 
 
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
